@@ -1,0 +1,265 @@
+:root{
+    --header-main-color:#D3D3D3;
+    --header-height:75px;
+    --banner-height:350px;
+    --desciption-height:250px;
+    --products-height:350px;
+    --footer-height:200px;
+}
+
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url("fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url("fonts/Ubuntu-Bold.ttf");
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Ubuntu-Regular;
+}
+body,html{
+    width:100%;
+}
+
+
+header{
+    display:flex;
+    height:var(--header-height);
+    width:100%;
+    padding:0 5%;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color:var(--header-main-color);
+}
+
+.header_logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:150px;
+}
+
+.header_logo_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:60%;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-family: Ubuntu-Bold;
+}
+.header_logo_image{
+    display: flex;
+    height:100%;
+    width:40%;
+    padding:.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.header_logo_image img{
+    height:50px;
+    width:50px;
+}
+
+.header_buttons{
+    height:100%;
+    width:20%;
+    padding:5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+}
+.header_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px black;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.header_button img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    width:30px;
+}
+
+#wrapper{
+    width: 100%;
+    padding:0 10%;
+}
+
+#banner{
+    padding-top: 1.5rem;
+    background-image: url("https://www.jidoshaguadalupe.mx/static/agency-go-virtual/Nissan/Frontier/2023/nissan-frontier-hero-banner.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:var(--banner-height);
+}
+.banner_title{
+    display:flex;
+    width:100%;
+    height:10%;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu-Bold;
+    color:whitesmoke;
+    font-size: 3em;
+    letter-spacing: .2rem;
+}
+
+.desciption{
+    display: flex;
+    height:var(--desciption-height);
+    width:100%;
+    padding:1rem;
+}
+.desciption .text_content{
+    padding:3rem;
+}
+.desciption .text_content .text_title{
+    font-size: 2rem;
+    font-family: Ubuntu-Bold;
+    font-weight: 600;
+}
+.desciption .text_content .text_subtitle{
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-family: Ubuntu-Regular;
+    font-weight: 300;  
+}
+.desciption .image_container{
+    height:100%;
+    width:50%;
+}
+
+.desciption .image_container img{
+    height:100%;
+    width:auto;
+}
+
+#product__container{
+    display:flex;
+    justify-content: space-around;
+    height:var(--products-height);
+    width:100%;
+    padding:.5rem 0;
+}
+
+#product__container .product{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:20%;
+    height:100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+}
+
+.product_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:1rem;
+}
+
+
+#product__container .product .product_title{
+    font-family: Ubuntu-Bold;
+    font-size: 1.5rem;
+
+}
+
+#product__container .product .product_desciption{
+    padding:.5rem;
+    font-family: Ubuntu-Regular;
+}
+
+#product__container .product .product_photo{
+    width:100%;
+    height:40%;
+}
+
+#product__container .product .product_photo img{
+    width:100%;
+    height:100%;
+}
+
+
+
+.red_product{
+    background-color: #fdb8b7;
+}
+
+.yellow_product{
+    background-color: #ffffc2;
+}
+
+.green_product{
+    background-color: #90EE90;
+}
+
+.brown_product{
+    background-color: #C4A484;
+}
+
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:var(--footer-height);
+    width:100%;
+    padding:2rem 0;
+}
+
+footer .footer_title{
+    font-size: 2.5rem;
+    font-family: Ubuntu-Bold;
+    padding:5%;
+    height:20%;
+}
+
+footer .footer_profile_container{
+    display: flex;
+    justify-content: center;
+    height:80%;
+    width:100%;
+
+}
+footer .footer_profile_container .footer_profile_photo{
+    display: flex;
+    justify-content: center;
+    height:100%;
+}
+footer .footer_profile_container .footer_profile_photo img{
+    height:100%;
+    border-radius: 50%;
+}
+.footer_profile_name{
+    font-size: 2rem;
+    text-align: center;
+    font-size: Ubuntu-Bold;
+}
+.footer_profile_description{
+    font-size: 1rem;
+    text-align: center;
+    font-size: Ubuntu-Regular;
+}
+
+
+
