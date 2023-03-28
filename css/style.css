@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: url('../fonts/Monaco.ttf');
+}
+
+@font-face {
+    font-family: "Titulo";
+    src: url("../fonts/clacon2.ttf");
+}
+@font-face {
+    font-family: "Default";
+    src: url("../fonts/Monaco.ttf");
+}
+
+body,html{
+    height:100%;
+    width:100%;
+}
+
+:root{
+    --violet:#5651ff;
+    --bg-color:black;
+}
+
+#wrapper{
+    height:100%;
+    background-color: var(--bg-color);
+    color:var(--violet);
+}
+.main_name{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Default';
+    font-size: 3rem;
+}
+
+@media (max-width:500px) {
+    #project_list{
+        display:grid;
+        gap:1rem;
+        grid: 150px auto auto auto;
+
+    }
+    .project{
+        
+    }
+    
+
+}
+
+@media (min-width:501px) {
+    #project_list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.proyect{
+    background-color: white;
+}
