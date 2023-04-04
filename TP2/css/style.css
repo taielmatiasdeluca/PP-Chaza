@@ -1,0 +1,195 @@
+
+/*VARIABLES*/
+:root{
+    --almost-white:#efefef;
+    --almost-black:#070D0D;
+    --background-color:black;
+    --title-color: var(--almost-white);
+    --pastel-green: #77DD77;
+    --pastel-orange: #ffb347 ;
+    --pastel-red:#ff6961 ;
+
+    
+}
+@media (min-width:501px) {
+    :root{
+        --product-height:300px; 
+        --hero-height:250px;
+        --subtitle-size:3rem;
+        --title-size:6rem;
+        --search-height:60px;
+    }
+   
+}
+@media (max-width:500px) {
+    :root{
+        --product-height:180px; 
+        --hero-height:200px;
+        --subtitle-size:1.2rem;
+        --title-size:1.8rem;
+        --search-height:35px;
+    }
+   
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: ubuntu;
+    src: url(../../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ubuntu_title;
+    src: url(../../fonts/Ubuntu-Bold.ttf);
+}
+
+/*ESTILOS*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+html,body{
+    width:100%;
+    height: 100vh;
+}
+
+#wrapper{
+    width:100%;
+    min-height:100%;
+    background-color: var(--background-color);
+    color:var(--almost-white);
+}
+
+
+#hero{
+    width:100%;
+    height:var(--hero-height);
+    background-image: 
+    url(../images/image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 200px black;
+}
+
+#hero_title{
+    font-family: ubuntu_title;
+    font-size: var(--title-size);
+    width:100%;
+    height:100%;
+    text-shadow: 2px 2px 3px #000;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding:15vw 5vw;
+    color:var(--title-color);
+}
+#hero_title .subtitle{
+    font-size: var(--subtitle-size); 
+    padding-left: 1rem;
+    font-family: ubuntu;
+}
+
+#middle{
+    display:flex;
+    padding-left:.5rem;
+    margin: 0 10%;
+    position: relative;
+    bottom:calc(var(--search-height)/2);
+    height:var(--search-height);
+    background-color: var(--almost-white);
+    border-radius: 1rem;
+}
+#middle img{
+    padding:.5rem;
+    height:100%;
+}
+#middle input{
+    all:unset;
+    color:var(--almost-black);
+    height:100%;
+    width: 90%;
+    font-family: ubuntu;
+    padding-left: 1rem;
+    font-size: calc(var(--search-height)/2);
+
+    border-radius: 1rem;
+}
+
+#content{
+    height:60%;
+}
+
+.list{
+    height:var(--product-height);
+    margin:1rem 5%;
+}
+
+.list .item_container{
+    height:95%;
+    display: flex;
+    gap:.5rem;
+    overflow-x: scroll;
+}
+
+.product{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color:var(--almost-black);
+    font-family: ubuntu;
+    align-items: center;
+    height:inherit;
+    background-color: var(--almost-white);
+    border-radius: 1rem;
+}
+.product .product_image{
+    display: flex;
+    justify-content: center;
+    height:80%;
+}
+.product_title{
+    font-size: calc(var(--product-height)/15);
+}
+
+.list_title{
+    height:5%;
+    margin-bottom: 1rem;
+    font-family: ubuntu_title;
+
+}
+
+
+.offer{
+    display:flex;
+    width:100%;
+    border-radius: 1rem;
+    background-color: var(--almost-white);
+}
+.offer_image{
+    height:100%;
+}
+.offer_text{    
+    position: relative;
+    padding: .5rem;
+    right: 1rem;
+    background-color: var(--almost-white);
+    color:var(--almost-black);
+    font-family: ubuntu;
+    border-radius: 0 0 0 1rem;
+}
+.offer_title{
+    font-family: ubuntu_title;
+    font-size: calc(var(--product-height)/12);
+}
+.offer_description{
+    font-family: ubuntu;
+    font-size: calc(var(--product-height)/15);
+}
+.offer_direccion{
+    font-size: calc(var(--product-height)/15);
+    font-family: ubuntu_title;
+}
