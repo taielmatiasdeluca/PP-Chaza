@@ -19,6 +19,8 @@ let newProject = (name,img,descripcion,link)=>{
 
 let projects  = [
     newProject('TP1','none.png','Trabajo Numero 1','/TP1/'),
+    newProject('TP2','none.png','Trabajo Numero 2','/TP2/'),
+    
 ]
 
 let tpl = project_main_tpl.content.cloneNode(true);
