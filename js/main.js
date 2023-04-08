@@ -26,7 +26,7 @@ let projects  = [
 let tpl = project_main_tpl.content.cloneNode(true);
 projects.forEach(proyecto => {
     
-    let proyectoHtml = tpl;
+    let proyectoHtml = tpl.cloneNode(true);
     proyectoHtml.querySelector('.project__name').textContent = proyecto.name;
     proyectoHtml.querySelector('.project_image').textContent = proyecto.img;
     proyectoHtml.querySelector('.project__descripcion').textContent = proyecto.descripcion;
