@@ -1,0 +1,141 @@
+html,body{
+    height:100%;
+    width:100%;
+    font-family: ubuntu;
+}
+:root{
+    --item-height:60px;
+    --main-font:ubuntu;
+    --almost_gray_white: #ecebeb;
+    --button-color:green;
+    --main-color:gray;
+    --title-color:black;
+}
+
+content{
+    width:100%;
+    height:100%;
+}
+
+.main_image{
+    height:50%;
+    width:auto;
+}
+
+.main_image img{
+    height:100%;
+    width:100%;
+}
+
+
+.rate{
+    position: absolute;
+    right:15px;
+    top:45%;
+    text-align: center;
+}
+
+.rate_icon{
+    font-size: 1.5rem;
+    padding:13px;
+    border-radius: 1rem 0 1rem 0 ;
+    background-color: var(--button-color);
+    color:white;
+}
+
+.rate_price{
+    justify-content: center;
+    display:flex;
+    font-size: 1.5rem;
+    color:var(--button-color);
+}
+.rate_price .non{
+    color:var(--main-color);
+}
+
+
+.info{
+    width:100%;
+    height:40%;
+    background-color: var(--almost_gray_white);
+
+
+}
+
+.title{
+    font-size:1.5rem;
+    font-family: ubuntu_title;
+    height:30%;
+    padding:5%;
+
+}
+
+.title .subtitle{
+    padding:.5rem 0;
+    font-size: 1rem;
+    font-family: ubuntu;
+    color:var(--main-color);
+}
+
+.items_list{
+    height:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10%;
+}
+
+.description{
+    height:30%;
+    padding:5%;
+    color:var(--main-color);
+}
+
+.item{
+    height: var(--item-height);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:var(--main-color);
+
+}
+
+.item img{
+    height:100%;
+    width:auto;
+}
+
+
+
+.controllers{
+    height:10%;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+.controllers .button{
+    text-decoration: none;
+    color:inherit;
+    box-shadow:  0px 7px 3px -3px rgba(50, 50, 50, 0.75);
+    height:100%;
+    font-family: ubuntu_title;
+    user-select: none;
+    width:auto;
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.controllers .button:hover{
+    background-color: var(--button-color);
+    color:white;
+    transition: 1s;
+}
+
+
+.selected{
+    border-top: solid 2px var(--button-color);
+}

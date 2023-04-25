@@ -1,0 +1,33 @@
+:root{
+    --almost-white:#efefef;
+    --almost-black:#070D0D;
+    --background-color:black;
+    --title-color: var(--almost-white);
+    --pastel-green: #77DD77;
+    --pastel-orange: #ffb347 ;
+    --pastel-red:#ff6961 ;
+
+    
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ubuntu_title;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+/*ESTILOS*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+html,body{
+    width:100%;
+    height: 100vh;
+}

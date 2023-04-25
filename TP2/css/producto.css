@@ -1,0 +1,146 @@
+:root{
+    --title-height:70px;
+    --title-font-size:3rem;
+    --subtitle-font-size:2rem;
+    --bg-color:var(--almost-black);
+    --buttons-height:50px;
+}
+
+
+
+#wrapper{
+    min-height:100%;
+    padding-bottom: 1rem;
+    width:100%;
+    background-color: var(--almost-black);
+
+}
+
+.product_info{
+    color:var(--almost-white);
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.product_image{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.product_image img{
+    filter: drop-shadow(0 0 1rem var(--almost-white));
+    width:100%;
+    padding:1rem 0;
+    height:auto;
+}
+
+.product_text_info{
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product_title{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product_main_title{
+    display: flex;
+    justify-content: center;
+    font-size: var(--title-font-size);
+    font-family: ubuntu;
+}
+
+.product_price{
+    background-color: var(--almost-white);
+    color:var(--almost-black);
+    font-size: var(--title-font-size);
+    font-family: ubuntu;
+    padding:.5rem;
+    border-radius: 10px 0 10px 0;
+}
+
+.product_description{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:inherit;
+    font-family: ubuntu;
+    font-size: var( --subtitle-font-size);
+    padding:3rem 2rem;
+}
+
+.product_quote{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    padding:0 2rem;
+    margin:1rem 0;
+}
+.product_quote input{
+    all:unset;
+    border-bottom: 1px solid var(--almost-white);
+    font-family: ubuntu;
+    font-size: 1.5rem;
+    width:100%;
+    height:100%;
+
+}
+
+.product_buttons{
+    display:flex;
+    height:var(--buttons-height);
+    width:100%;
+    gap:.5rem;
+    padding: 0 5%;
+    font-family: ubuntu;
+}
+
+.cant_button{
+    display: flex;
+    width:30%;
+   
+}
+.cant_button .operation{
+    background-color: var(--almost-white);
+    width:20%;
+    color:var(--almost-black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cant_button .number{
+    background-color: var(--almost-white);
+    width:60%;
+    color:var(--almost-black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_cart_button{
+    background-color: var(--almost-white);
+    width:70%;
+    color:var(--almost-black);
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
